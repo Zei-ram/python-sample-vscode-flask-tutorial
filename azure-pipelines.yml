@@ -35,6 +35,8 @@ steps:
     pytest
   displayName: 'pytest'
 
+- script: python -m pip install --upgrade pip setuptools wheel
+  displayName: 'Install tools'
 - task: PythonScript@0
   inputs:
     scriptSource: 'inline'
